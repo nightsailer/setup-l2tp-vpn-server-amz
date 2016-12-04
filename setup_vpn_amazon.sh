@@ -406,7 +406,7 @@ iptables-restore < "$IPT_FILE"
 
 # Restart services
 service fail2ban restart 2>/dev/null
-service ipsec restart 2>/dev/null
+/usr/local/sbin/ipsec restart 2>/dev/null
 service xl2tpd restart 2>/dev/null
 
 cat <<EOF
